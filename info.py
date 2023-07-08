@@ -14,10 +14,10 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+SESSION = environ.get('1BVtsOGYBu8Bp0RIgSVD86_Oj7CIZXj02hO2DybMUZfaAQR52W45OEKtHeJLgKvsLTf_tL9eLJUUdfVkE0zGDhm39QMZ1zBEpHUTBrpXlMMBz2lX7kdvEG9GykGE2VwzaUCbliZE2j7omi0jos6rO1nnNwG5pYybrDL_4HZG21G7DYD6fo2UgmWEZUOvar1bcj49vcCQNddQwQLNMjaZ_tsTpH9chQM0xxaKYVMq4IqM4gKGhGCVttTNVudMBQAIKxbqNTsxw8nKG786c-TtzyLKlhNBLTriWcWvYH07cacac2wXiNw70BPD-XKfasESM76dltGd7lCsUsiUnrmXRB2tGSYt-bYA=', 'Media_search')
+API_ID = int(environ['23189612'])
+API_HASH = environ['71ed204544e0715e17ea033e0aca2d6f']
+BOT_TOKEN = environ['5941529620:AAGWMi7yCRJi4mH6bpo5GuKe-ZQ8NS_xyb8']
 
 #rename
 FLOOD = int(environ.get("FLOOD", "10"))
@@ -27,31 +27,31 @@ RENAME_MODE = bool(environ.get("RENAME_MODE"))
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5083526feada50efd29dc.jpg https://telegra.ph/file/a014d59bbc4a3917158d3.jpg https://telegra.ph/file/0ce3fdbe4369cad5e0113.jpg https://telegra.ph/file/7c0f6910bd34093983bd9.jpg https://telegra.ph/file/b4553c00050dec17487e9.jpg https://telegra.ph/file/720fb80700e0a6451f79a.jpg https://telegra.ph/file/4c25bfea6ed967ea9f10f.jpg https://telegra.ph/file/f4869c934a7f2eaa31f79.jpg https://telegra.ph/file/9f6bfb939571221e1763b.jpg https://telegra.ph/file/dcc455d2e6ec2b8e7c2c8.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/b856bcc3281a959e80b0e.jpg")
-NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/01c61cf59dc187477c16f.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/8142d603291ff2f556daf.jpg https://graph.org/file/e77e1aeca310e33d0c653.jpg https://graph.org/file/17914bf60e095f234063d.jpg https://graph.org/file/188d081c927d4a94edccb.jpg https://graph.org/file/2dac21855207ae35fdc3b.jpghttps://graph.org/file/85b6490b3dc7eb9a424c4.jpg https://graph.org/file/162347d5f0ebbd7a283fc.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/8142d603291ff2f556daf.jpg")
+NEWGRP = environ.get("NEWGRP", "https://graph.org/file/8142d603291ff2f556daf.jpg https://graph.org/file/e77e1aeca310e33d0c653.jpg https://graph.org/file/17914bf60e095f234063d.jpg https://graph.org/file/188d081c927d4a94edccb.jpg https://graph.org/file/2dac21855207ae35fdc3b.jpghttps://graph.org/file/85b6490b3dc7eb9a424c4.jpg https://graph.org/file/162347d5f0ebbd7a283fc.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/91bd6cd35cb853bef9baa.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "")
+SPELL_IMG = environ.get("https://graph.org/file/fbe7ce3c72b4fbcb92317.jpg", "https://graph.org/file/603fea39b4125eb257f22.jpg")
 SP = (environ.get('SP', '')).split()
 
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('5431311680', '6118927515').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('-1001932781121', '0').split()]
 
 
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('5431311680', '6118927515').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
-auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+auth_channel = environ.get('-1001932781121')
+auth_grp = environ.get('-1001900195275')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(-1001932781121) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID')
-reqst_channel = environ.get('REQST_CHANNEL_ID')
+support_chat_id = environ.get('-1001900195275')
+reqst_channel = environ.get('-1001932781121')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-login_channel = environ.get('LOGIN_CHANNEL')
+login_channel = environ.get('-1001932781121')
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 
 
