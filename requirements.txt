@@ -31,6 +31,8 @@ dnspython
 python-math
 psutil==5.9.4
 speedtest-cli
+openai==0.25.0
+humanize
 
 
 python-dotenv
