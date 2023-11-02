@@ -76,7 +76,7 @@ link - 🔗 LINK TO HOST (ADMIN ONLY)
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/Sridhark01/DQ-_BULLET">
+<a href="https://heroku.com/deploy?template=https://github.com/RealZenX/autofilterv4">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
