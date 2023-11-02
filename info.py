@@ -43,26 +43,26 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('-100
 
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('5431311680', '6118927515').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('-1001932781121')
-auth_grp = environ.get('-1001900195275')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(-1001932781121) else None
+auth_channel = environ.get('-1001572271892')
+auth_grp = environ.get('-1001764492892')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(-1001572271892) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('-1001900195275')
-reqst_channel = environ.get('-1001932781121')
+support_chat_id = environ.get('-1001566837125')
+reqst_channel = environ.get('-1001905367057')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-login_channel = environ.get('-1001932781121')
+login_channel = environ.get('-1001868871195')
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Custom Chats
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ''))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001905367057'))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+kdCUBx0zDT02ZDBl')
 
 # This is required for the plugins involving the file system.
 TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
@@ -74,8 +74,8 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '973a78409424fc98d61399e41a1aa90ba0199e10')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shareus.io')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 
 # Others
@@ -92,7 +92,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+8vZTQtzo0lBmNDY9')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+e_UqPGvuQ5E5NGU1')
 MSG_ALRT = environ.get('MSG_ALRT', 'Piracy Is Crime')
 NOR_ALRT =  environ.get('NOR_ALRT', 'NO IMAGES IS FOUND')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Nothing_Support_Group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -116,8 +116,8 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 #redict
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/Royal_Enfield_bot_Updates")
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+hHHW8TOqFhE1OWQ1")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/netflix_complex")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+kdCUBx0zDT02ZDBl")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 
