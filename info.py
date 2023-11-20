@@ -14,10 +14,10 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('1BVtsOGYBu8Bp0RIgSVD86_Oj7CIZXj02hO2DybMUZfaAQR52W45OEKtHeJLgKvsLTf_tL9eLJUUdfVkE0zGDhm39QMZ1zBEpHUTBrpXlMMBz2lX7kdvEG9GykGE2VwzaUCbliZE2j7omi0jos6rO1nnNwG5pYybrDL_4HZG21G7DYD6fo2UgmWEZUOvar1bcj49vcCQNddQwQLNMjaZ_tsTpH9chQM0xxaKYVMq4IqM4gKGhGCVttTNVudMBQAIKxbqNTsxw8nKG786c-TtzyLKlhNBLTriWcWvYH07cacac2wXiNw70BPD-XKfasESM76dltGd7lCsUsiUnrmXRB2tGSYt-bYA=', 'Media_search')
-API_ID = int(environ['23189612'])
-API_HASH = environ['71ed204544e0715e17ea033e0aca2d6f']
-BOT_TOKEN = environ['5941529620:AAGWMi7yCRJi4mH6bpo5GuKe-ZQ8NS_xyb8']
+SESSION = environ.get('SESSION', 'Media_search')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 #rename
 FLOOD = int(environ.get("FLOOD", "10"))
